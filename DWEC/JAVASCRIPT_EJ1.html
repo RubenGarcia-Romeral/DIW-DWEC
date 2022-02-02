@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="miFuncion()">Introducir nombre y apellidos</button>
+
+<p id="demo"></p>
+
+<script>
+  let str = prompt("Introduce tu nombre, appellidos y año de nacimiento");
+  let strArray = str.split(" ");
+  let usuario = strArray[0].substring(0,1) + strArray[1].substring(0,1) + strArray[3].substring(2,4); 
+
+    usuario = usuario.toLowerCase();
+
+    document.writeln("Cadena en mayusculas: " + str.toUpperCase() + "<br>");
+    document.writeln("Muestra de nombre, primer apellido, segundo apellido y año: <br>");
+    strArray.forEach(element => {
+      document.writeln(element + "<br>");
+
+    });
+
+    document.write("Nombre de usuario: " + usuario);
+</script>
+
+</body>
+</html>
