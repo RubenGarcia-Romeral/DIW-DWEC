@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+body {
+  margin: 0;
+  text-align: center;
+  font-family: Arial;
+  background-color: #F2D6A2;
+}
+
+h1 {
+  font-family: "Indie Flower", cursive;
+  margin: 0;
+  font-size: 60px;
+  color: #732E07;
+}
+
+header {
+  padding: 1px;
+}
+
+.tablas-caja {
+  display: flex;
+  margin-right: 80px;
+  border-radius: 8px;
+}
+
+.tablas {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#descripcion {
+  background-color: #732E07;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-right: 20px;
+  color: white;
+  font-size: 17px;
+  padding: 20px;
+  display: flex;
+  overflow: scroll;
+}
+
+#container {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  margin-right: 30px;
+  background-color: #BF8417;
+  grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
+  border-radius: 5px;
+}
+
+.juego {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  margin: 10px;
+}
+
+.celda {
+  display: grid;
+  background-image: url("../imagenes/muestra.jpg");
+  align-content: center;
+  height: 200px;
+  background-size: 100% 100%;
+  border-radius: 10px;
+}
+
+.imagen {
+  border-radius: 4px;
+  width: 100%;
+  height: 200px;
+}
+
+.sombra {
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, inset 6px 6px 28px -2px rgba(0, 0, 0, 0);
+}
+
+#logo {
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 10px;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+}
+
+#nick {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #732E07;
+  background-color: white;
+  border-radius: 10px;
+  height: 80px;
+  width: 80px;
+}
+
+#ranking {
+  font-size: 32px;
+}
+
+.caja {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #732E07;
+  background-color: white;
+  border-radius: 10px;
+  height: 25px;
+  width: 80px;
+}
+
+.cajaIdioma {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #732E07;
+  background-color: white;
+  border-radius: 10px;
+  height: 25px;
+  width: 162px;
+}
+
+#globito {
+  margin-left: 5px;
+}
+
+.contador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #732E07;
+  background-color: white;
+  border-radius: 10px;
+  height: 53px;
+  width: 80px;
+}
+
+.botonIdioma {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #732E07;
+  background-color: white;
+  border-radius: 10px;
+  height: 49px;
+  width: 80px;
+}
+
+.botonIdiomaBoton {
+  background-color: #D9AD2B;
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.botonIdiomaBoton:active {
+  background-color: #DDC275;
+}
+
+.informacion {
+  width: 97.5%;
+  height: 60px;
+  margin-top: 8px;
+  background-color: #732E07;
+  margin-left: 10px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+#barra-informativa {
+  width: 97.5%;
+  height: 60px;
+  margin-top: 8px;
+  background-color: #732E07;
+  margin-left: 10px;
+  border-radius: 10px;
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+.texto-informacion {
+  line-height: 55px;
+  color: white;
+}
+
+footer {
+  border-radius: 15px;
+  font-size: 25px;
+  display: table;
+  color: white;
+  background: #020024;
+  margin: auto;
+  /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(74,23,95,1) 29%, rgba(168,53,173,1) 92%);
+  margin-bottom: 0px;*/
+  background: #3f2059;
+  background: radial-gradient(circle, #3f2059 29%, #a446fc 87%);
+  width: 97.5%;
+  height: 70px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.texto-footer {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#tituloMovil {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  #container {
+    grid-template-columns: 32% 32% 32%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #container {
+    grid-template-columns: 48% 48%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container {
+    grid-template-columns: 48% 48%;
+  }
+
+  #descripcion {
+    display: none;
+  }
+
+  #tituloMovil {
+    display: block;
+  }
+
+  #tituloPc {
+    display: none;
+  }
+
+  #punt {
+    grid-area: punt;
+  }
+
+  #top {
+    grid-area: topP;
+    margin: auto;
+  }
+
+  #idioma {
+    grid-area: idioma;
+  }
+
+  .tabla-informacion {
+    margin-left: 5px;
+    grid-template-areas: "punt idioma" "topP idioma";
+    grid-gap: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

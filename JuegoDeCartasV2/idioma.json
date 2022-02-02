@@ -1,0 +1,24 @@
+{
+    "lang": {
+        "en": {
+            "score": "Score",
+            "game_description": "Welcome to the card game where you have to find the pair of each animal. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "errors": "Errors",
+            "top_player": "Legend",
+            "message_success": "Nice, the cards match!!",
+            "message_mistake": "Oops, you failed",
+            "message_victory": "You won the game",
+            "language": "Language"
+        },
+        "es": {
+            "score": "Puntuación",
+            "game_description": "Bienvenido al juego de cartas donde tienes que encontrar la pareja de cada animal. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "errors": "Errores",
+            "top_player": "Leyenda",
+            "message_success": "Buena! las cartas son iguales!!",
+            "message_mistake": "Vaya... has fallado",
+            "message_victory": "Has ganado el juego",
+            "language": "Idioma"
+        }
+    }
+}

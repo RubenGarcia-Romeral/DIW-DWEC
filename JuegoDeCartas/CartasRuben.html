@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <script src="https://kit.fontawesome.com/d8442dcb67.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5b862d9d18.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de cartas</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/leon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="tituloPc">ZooCard</h1><h1 id="tituloMovil">ZC</h1>
+        <img src="imagenes/logo.png" id="logo">
+    </header>
+
+
+
+    <div class="tablas">
+
+        <div class="tablas-caja" id="punt">
+            <div>
+                <div id="nick"></div>
+            </div>
+
+            <div>
+                <div><span class="caja" id="puntuacionTexto">Puntuación</span></div>
+                <div><span class="contador" id="contador-puntos">0</span></div>
+            </div>
+
+            <div>
+                <div class="caja" id="errorTexto">Errores</div>
+                <div><span class="contador" id="contador-errores">0</span></div>
+            </div>
+
+        </div>
+
+
+        <div class="tablas-caja" id="top">
+            <div>
+                <div class="caja" id="top-player">Mejor</div>
+                <div class="contador" id="ranking-jugador"></div>
+            </div>
+
+
+            <div>
+                <div class="caja" id="puntuacionTextoRanking">Puntuación</div>
+                <div class="contador" id="ranking-puntuacion"></div>
+            </div>
+
+        </div>
+
+
+
+        <div id="idioma">
+            <div class="cajaIdioma" id="idiomaTexto">Idioma</div>
+
+            <div class="tablas-caja">
+                <div class="botonIdioma"><button class="botonIdiomaBoton" id="es">ESP</button></div>
+                <div class="botonIdioma"><button class="botonIdiomaBoton" id="en">ENG</button></div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div id="barra-informativa"></div>
+    
+
+    <br>
+
+
+
+    <div class="juego">
+
+        <div id="container">
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+        </div>
+
+
+        <aside id="descripcion">
+            
+        </aside>
+
+
+    </div>
+
+
+    <footer>
+        <p class="texto-footer">Ruben Garcia-Romeral Ortega | ZooCard</p>
+    </footer>
+
+
+    <script src="js/cambiaIdioma.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
