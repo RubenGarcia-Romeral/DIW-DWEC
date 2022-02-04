@@ -34,6 +34,7 @@ function loadJSON(json) {
     descripcion.text(elements["game_description"]);
 }
 
+
 function barraInformativaTexto(estado) {
     let xhr = new XMLHttpRequest();
 
