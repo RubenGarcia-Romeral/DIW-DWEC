@@ -203,8 +203,6 @@ footer {
   color: white;
   background: #020024;
   margin: auto;
-  /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(74,23,95,1) 29%, rgba(168,53,173,1) 92%);
-  margin-bottom: 0px;*/
   background: #3f2059;
   background: radial-gradient(circle, #3f2059 29%, #a446fc 87%);
   width: 97.5%;
@@ -216,6 +214,15 @@ footer {
 .texto-footer {
   display: table-cell;
   vertical-align: middle;
+}
+
+#invisible {
+  display: none;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  z-index: 1;
+  width: 80%;
+  height: 70%;
 }
 
 #tituloMovil {
