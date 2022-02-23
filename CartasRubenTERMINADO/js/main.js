@@ -1,15 +1,15 @@
 $(document).ready(function() {
 
-    // Carga la lista de mejores jugadores al cargar la página
+    // Carga la lista de mejores jugadores al cargar el juego
     cargarRanking();
 
     function comprobarDificultad() {
-        // Si la dificultad es fácil, ponemos disponible el botón de mostrar cartas y no hay bomba
+        // Si la dificultad es fácil, ponemos disponible el botón de mostrar cartas y no aparece bomba
         if (boton_facil.is(':checked')) {
             dificultad = "facil";
             botonMostrarCartas.attr('disabled', null);
  
-            
+
             pulsadoBotonMostrar = false;
             listaDeCartasAcertadas = [];
 
@@ -29,7 +29,7 @@ $(document).ready(function() {
 
 
 
-    // Restablece los datos
+    // Restablece datos
     function restablecer() {
         // Celdas DIV del DOM
         celdaImagen1 = 0;
@@ -44,17 +44,16 @@ $(document).ready(function() {
     function mostrarCartas() {
         let arrayCartas = $('.celda');
 
-        // Deshabilitamos el botón de mostrar
+        // Quitamos el botón de mostrar
         botonMostrarCartas.attr('disabled', 'disabled');
 
-        // Si no se ha pulsado el botón, le damos la vuelta a todas las cartas
-        // salvo las que hemos acertado
+        // Si no se ha pulsado el botón, le damos la vuelta a todas las cartas salvo las acertadas
         if (!pulsadoBotonMostrar) {
             pulsadoBotonMostrar = true;
 
             caja_invisible.style.display = "block";
 
-            // Damos la vuelta a todas las cartas
+            // Damos la vuelta a las cartas
             for (i = 0; i < arrayCartas.length; i++) {
                 arrayCartas[i].innerHTML = "<img src='images/animales/ficha" + $(arrayCartas[i]).data('valor') + ".jpg' class='imagen'>";
             }
