@@ -4,7 +4,7 @@ function getIdioma() {
     } else {
         return "es";
     }
-}
+} 
 
 
 function loadLanguage() {

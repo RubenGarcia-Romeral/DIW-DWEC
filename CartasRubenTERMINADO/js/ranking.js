@@ -16,6 +16,7 @@ function cargarRanking() {
     });
 
 
+    
     // Carga la tabla
     $("#jugadores").html(celdas);
 }

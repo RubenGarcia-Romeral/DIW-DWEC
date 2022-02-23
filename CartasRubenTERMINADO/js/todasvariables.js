@@ -17,6 +17,7 @@ let contador_puntos = $("#contador-puntos");
 let contador_errores = $("#contador-errores");
 
 
+
 let errores = 0;
 let puntos = 0;
 

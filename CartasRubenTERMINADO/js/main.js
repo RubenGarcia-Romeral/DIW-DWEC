@@ -8,7 +8,8 @@ $(document).ready(function() {
         if (boton_facil.is(':checked')) {
             dificultad = "facil";
             botonMostrarCartas.attr('disabled', null);
-
+ 
+            
             pulsadoBotonMostrar = false;
             listaDeCartasAcertadas = [];
 
